@@ -1,11 +1,11 @@
 {
-  "name": "js-test-layout",
+  "name": "furniture-store",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/js-test-layout/",
+    "build": "vite build --base=/furniture-store/",
     "preview": "vite preview"
   },
   "devDependencies": {
