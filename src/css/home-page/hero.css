@@ -1,0 +1,125 @@
+.section-hero {
+  margin-top: 60px;
+  background-image: url(../../img/home/fon2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 875px) {
+  .section-hero {
+    background-image: none;
+  }
+}
+
+@media only screen and (min-width: 875px) {
+  .wrap-hero {
+  }
+}
+@media only screen and (min-width: 875px) {
+  .wrap-hero {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.left-hero {
+  display: none;
+}
+
+.left-hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 875px) {
+  .left-hero {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 875px) {
+  .left-hero {
+    width: 50%;
+    margin-right: 15px;
+  }
+}
+
+.right-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-hero {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 38px;
+  }
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .text {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+}
+
+.link {
+  display: block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: #4040ae;
+  border: 1px solid transparent;
+  padding: 16px 59px;
+  font-size: 1rem;
+  border-radius: 25px;
+  max-width: 67px;
+  margin: 0 auto;
+}
+
+.link:hover {
+  background-color: blue;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+.link:active {
+  background-color: blue;
+}
+.link:focus {
+  background-color: blue;
+}

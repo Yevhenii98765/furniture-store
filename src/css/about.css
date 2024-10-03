@@ -1,0 +1,13 @@
+.about-section {
+  margin-top: 80px;
+}
+
+.span-about {
+  font-weight: bold;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

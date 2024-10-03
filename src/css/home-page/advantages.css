@@ -1,0 +1,112 @@
+.title-wrap {
+  margin-bottom: 16px;
+}
+
+.title-advantages {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 762px) {
+  .title-advantages {
+    font-size: 28px;
+  }
+}
+
+.wrap-advantages {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 762px) {
+  .wrap-advantages {
+    flex-direction: row;
+    margin-bottom: 32px;
+    gap: 15px;
+  }
+}
+
+.wrap-img {
+  width: 100%;
+  height: 390px;
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 762px) {
+  .wrap-img {
+    width: 50%;
+    height: 390px;
+    margin-bottom: 0;
+  }
+}
+
+.wrap-title {
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 762px) {
+  .wrap-title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+.img-advantages {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 762px) {
+  .second-title {
+    text-align: center;
+  }
+}
+
+.second-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+
+@media only screen and (min-width: 762px) {
+  .second-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 48px;
+  }
+}
+.second-title-list {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.second-text-list {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.list-style-advantages {
+  margin-bottom: 10px;
+}

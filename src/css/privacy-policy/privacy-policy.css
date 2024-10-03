@@ -1,0 +1,43 @@
+.policy-section {
+}
+
+.wrap-title-policy {
+}
+
+.title-policy {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.text-policy {
+  font-size: 15px;
+  box-sizing: border-box;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.list-policy {
+}
+
+.second-title-policy {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.third-title-policy {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.list-style-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.style-text-policy {
+}

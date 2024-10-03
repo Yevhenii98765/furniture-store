@@ -1,0 +1,32 @@
+.footer {
+  padding: 48px 0;
+  background-color: black;
+}
+
+.footer-logo {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.footer-img {
+  background-color: black;
+}
+
+.text-footer-logo {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.link-footer {
+  font-size: 18px;
+  color: #fff;
+}
+
+.list-footer {
+  margin-bottom: 24px;
+}
+
+.text-footer {
+  color: #fff;
+}

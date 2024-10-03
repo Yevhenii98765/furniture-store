@@ -1,0 +1,21 @@
+/* Styles for Mobile devices */
+.container {
+  min-width: 280px;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 762px) {
+  .container {
+    min-width: 730px;
+    max-width: 1320px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200;
+    max-width: 1320px;
+  }
+}

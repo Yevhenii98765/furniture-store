@@ -1,0 +1,58 @@
+<div class="modal-menu-container" id="cookie-overlay">
+  <div class="iner-modal">
+    <div class="wrap-title-modal">
+      <h1 class="modal-title">
+        This site uses cookies to provide the most relevant experience. By using
+        this site, you agree to this. Learn more about cookies in our
+      </h1>
+      <a class="link-modal" href="./privacy-policy.html">Privacy Policy.</a>
+    </div>
+    <div class="wrap-selection">
+      <p id="cookie-reject" class="text-modal">No</p>
+      <p id="cookie-accept" class="text-modal">Yes</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function getCookie(name) {
+      let cookieName = name + '=';
+      let cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i].trim();
+        if (cookie.indexOf(cookieName) === 0) {
+          return cookie.substring(cookieName.length, cookie.length);
+        }
+      }
+      return null;
+    }
+
+    function setCookie(name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      const expires = 'expires=' + date.toUTCString();
+      document.cookie =
+        name + '=' + value + ';' + expires + ';path=/;SameSite=Lax';
+    }
+
+    const cOverlay = document.getElementById('cookie-overlay');
+    const cReject = document.getElementById('cookie-reject');
+    const cAccept = document.getElementById('cookie-accept');
+    const userAcceptedCookies = getCookie('userAcceptedCookies');
+
+    if (userAcceptedCookies === 'true' || userAcceptedCookies === 'false') {
+      cOverlay.classList.add('d-none');
+    }
+
+    cReject.addEventListener('click', function () {
+      cOverlay.classList.add('d-none');
+      setCookie('userAcceptedCookies', 'false', 30);
+    });
+
+    cAccept.addEventListener('click', function () {
+      cOverlay.classList.add('d-none');
+      setCookie('userAcceptedCookies', 'true', 30);
+    });
+  });
+</script>
